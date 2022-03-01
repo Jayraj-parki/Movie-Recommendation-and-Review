@@ -1,0 +1,26 @@
+@import "../../../var";
+.subscription {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+    overflow: hidden;
+    // background: $bg-secondary;
+    background-color: rgba(0,0,0,0.8);
+    .toggler {
+        button {
+            outline: none;
+            border: none;
+            background: transparent;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 17px;
+            text-transform: capitalize;
+        }
+        #toggle {
+            background: linear-gradient(to right, #95a5a6, #95a5a6);
+            border-radius: 0px 0px 5px 5px;
+        }
+    }
+    
+}

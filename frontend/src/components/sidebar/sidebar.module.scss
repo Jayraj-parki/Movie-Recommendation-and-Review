@@ -1,0 +1,24 @@
+.sidebar,.offcanvas {
+    height: calc(100vh - 60px);
+    position: sticky;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    // z-index: 1000;
+    .offcanvas{
+        z-index: 1000;
+    }
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #dcdde1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(to right, #0984e3, #0fbcf9);
+        border-radius: 2rem;
+    }
+    
+    
+    
+}

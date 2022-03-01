@@ -1,0 +1,11 @@
+.goBack {
+    span {
+        text-decoration: none;
+        font-weight: 500;
+        color: #2f3640;
+        cursor: pointer;
+        &:active {
+            color: #dcdde1;
+        }
+    }
+}

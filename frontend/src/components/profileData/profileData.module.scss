@@ -1,0 +1,32 @@
+.profileData {
+    height: calc(100vh - 60px);
+    position: sticky;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #dcdde1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(to right, #0984e3, #0fbcf9);
+        border-radius: 2rem;
+    }
+    .content {
+        background-color: transparent;
+        border-radius: 20px;
+        .tagsContainer{
+            .genreTags{
+                // border: 2px solid #353b48;
+                border-radius: 5px;
+                span{
+                    border-radius: 20px;
+                    color: #f5f6fa;
+                }
+            }
+        }
+    }
+}

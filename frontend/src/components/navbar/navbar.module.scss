@@ -1,0 +1,19 @@
+.navbar{
+    background-color: #f5f6fa;
+    z-index: 900;
+    .navbarContainer{
+        .logo{
+            color: #2f3640;
+            font-weight: 700;
+            span{
+                font-weight: 700;
+            }
+        }
+        .navbarToggler{
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        
+    }
+}

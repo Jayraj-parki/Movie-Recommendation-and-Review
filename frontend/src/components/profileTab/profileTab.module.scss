@@ -1,0 +1,16 @@
+.profileTab{
+    color: #2c3e50;
+    img{
+        height:44px;
+        width: 44px;
+        object-fit: cover;
+        border-radius: 50%;
+    } 
+    h5{
+        text-transform: capitalize;
+        color: #0984e3;
+    }
+    // &:hover{
+    //     background-color: #e9e9e9;
+    // }
+}

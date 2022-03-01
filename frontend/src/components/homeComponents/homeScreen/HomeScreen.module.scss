@@ -1,0 +1,44 @@
+.homeScreen{
+    background-color: #181818;
+    position: relative;
+    .carauselSlide{
+        .carauselInner{
+            div{
+                height: 100vh;
+                overflow: hidden;
+                img{
+                    object-fit:cover;
+                    transform: translateY(-100px);
+                    filter: brightness(35%);;   
+                    // filter: blur(15%);; 
+                    background-position:-137px 2px;  
+                }
+            }
+
+        }
+    }
+    .greeting{
+        position: absolute;
+        top:0%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        font-size: 34px;
+        color: white;
+        .navbar{
+            height: 50px;
+        }
+        .content{
+            height: calc(100vh - 50px);
+            .title{
+                font-size: 34px;
+                @media screen and (max-width:600px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width:320px) {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

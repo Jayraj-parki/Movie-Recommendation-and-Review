@@ -1,0 +1,12 @@
+.logout{
+    overflow: hidden;
+    .content{
+        transition: all 0.5s ease-in-out;
+    }
+    &:hover{
+        
+        .content{
+            transform: translateX(30px);
+        }
+    }
+}

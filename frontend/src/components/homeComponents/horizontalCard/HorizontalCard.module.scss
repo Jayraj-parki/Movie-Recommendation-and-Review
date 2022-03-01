@@ -1,0 +1,24 @@
+@import "../../../var";
+.card {
+   overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+    transform: scaleX(0.9) !important;
+    .cardBody {
+        background-color: $bg-primary;
+        h1 {
+            text-align: justify;
+            color: $bg-light-theme;
+            font-size: 64px;
+        }
+        hr {
+            color: #0984e3;
+        }
+        h3{
+            color: $text-dark;
+            // font-size: 16px;
+        }
+       
+        
+    }
+}

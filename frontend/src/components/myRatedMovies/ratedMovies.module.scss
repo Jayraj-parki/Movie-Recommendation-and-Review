@@ -1,0 +1,41 @@
+.rated {
+    height: calc(100vh - 60px);
+    position: sticky;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .loader{
+        position: absolute;
+        top:0;
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+    }
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #dcdde1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(to right, #0984e3, #0fbcf9);
+        border-radius: 2rem;
+    }
+    .content {
+        background-color: #ebebeb;
+        border-radius: 10px;
+    }
+    .mainContent {
+        .movies {
+            background-color: #ebebeb;
+            border-radius: 20px;
+            height: auto;
+            width: 100%;
+            .metadata {
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

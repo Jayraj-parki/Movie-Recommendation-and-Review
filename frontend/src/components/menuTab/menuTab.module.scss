@@ -1,0 +1,38 @@
+.menuLink{
+    text-decoration: none;
+    .menuTab{
+        cursor: pointer;
+        transition: background-color .2s ease-in-out;
+        img{
+            height:44px;
+            width: 44px;
+            object-fit: cover;
+            border-radius: 50%;
+        } 
+        span{
+            text-transform: capitalize;
+            color: #2c3e50;
+            font-size: 15px;
+        }
+        .content{
+            transition: all 0.2s ease-in-out;
+        }
+        &:hover{
+            background-color: #e9e9e9 !important;
+            .content{
+                transform: translateX(30px);
+            }
+        }
+    }
+    #active{
+        background: linear-gradient(to right, #0984e3, #0fbcf9);
+        border-radius: 0;
+        .content{
+            color: #f5f6fa;
+            span{
+                color: #ffffff;
+                font-weight: 600;
+            }
+        }
+    }
+}
