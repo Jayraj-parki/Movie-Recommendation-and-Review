@@ -1,6 +1,6 @@
 const express=require('express')
 require('dotenv').config({path:"./config.env"})
-const PORT=process.env.PORT
+const PORT=process.env.PORT || 5000
 const helmet=require("helmet")
 const morgan=require("morgan")
 const cookieparser=require("cookie-parser")
@@ -35,6 +35,14 @@ app.use("/api/review",reviewRoute)
 app.use("/api/allData",allRoute)
 app.use("/api/issues",issueRoute)
 
+
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname,"../frontend/build", "index.html"));
+  });
+
+if(process.env.NODE_ENV=="production"){
+    app.use(express.static("client/build"))
+}
 
  
 app.listen(PORT,()=>{
