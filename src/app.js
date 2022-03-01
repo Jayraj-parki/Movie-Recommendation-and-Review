@@ -1,4 +1,5 @@
 const express=require('express')
+const path=require('path')
 require('dotenv').config({path:"./config.env"})
 const PORT=process.env.PORT || 5000
 const helmet=require("helmet")
