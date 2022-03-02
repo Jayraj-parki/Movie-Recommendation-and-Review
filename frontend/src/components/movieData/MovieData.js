@@ -21,7 +21,7 @@ export default function MovieData({ id }) {
     const countOfLike = async () => {
         try {
 
-            const result = await fetch((`/like/count/byMovie//${id}`), {
+            const result = await fetch((`/like/count/byMovie/${id}`), {
                 method: "GET",
                 headers: {
                     "Content-type": "application/json"
@@ -42,7 +42,7 @@ export default function MovieData({ id }) {
     const countOfFavMovie = async () => {
         try {
 
-            const result = await fetch((`/favouriteMovie/count/byMovie//${id}`), {
+            const result = await fetch((`/favouriteMovie/count/byMovie/${id}`), {
                 method: "GET",
                 headers: {
                     "Content-type": "application/json"
@@ -63,7 +63,7 @@ export default function MovieData({ id }) {
     const countReview = async () => {
         try {
 
-            const result = await fetch((`/review/count/byMovie//${id}`), {
+            const result = await fetch((`/review/count/byMovie/${id}`), {
                 method: "GET",
                 headers: {
                     "Content-type": "application/json"

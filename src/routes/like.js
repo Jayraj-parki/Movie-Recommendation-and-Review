@@ -95,7 +95,7 @@ router.get("/specific/byMovie/:id", async (req, res) => {
     }
 })
 
-//get count of rating for any movie by movieID 
+//get count of like for any movie by movieID 
 router.get("/count/byMovie/:id", async (req, res) => {
     try {
         const count = await LikeMovie.find({ movieId: req.params.id }).count()
