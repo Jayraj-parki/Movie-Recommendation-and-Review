@@ -57,6 +57,8 @@ if(process.env.NODE_ENV=="production"){
     app.use(express.static("frontend/build"))
 }
 
+// "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+ 
  
 app.listen(PORT,()=>{
     console.log("listening at "+PORT)

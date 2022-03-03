@@ -29,11 +29,15 @@ export default function Register() {
                 const data = await result.json();
                 if (result.status === 201) {
                     alert(data.msg)
+                    username.current.value=""
+                    email.current.value=""
+                    password.current.value=""
+                    confirmPassword.current.value=""
                 }
                 else {
                     alert(data.err)
                 }
-            }
+            } 
             catch (err) {
                 console.log("Error in Registeration", err)
             }
@@ -45,7 +49,7 @@ export default function Register() {
     }, []);
     return (
         <div data-aos={"fade-up"}>
-            <div  className='col-8 mx-auto text-light pb-2 text-center fs-5  border-bottom'>Register Here</div>
+            <div className='col-8 mx-auto text-light pb-2 text-center fs-5  border-bottom'>Register Here</div>
 
             <div className={style.register + " col-12 p-lg-5 py-lg-4 "}>
                 <div className="mb-lg-2 text-start">

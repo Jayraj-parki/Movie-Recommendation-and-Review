@@ -26,6 +26,8 @@ export default function Contact() {
             const data = await result.json();
             if (result.status === 200) {
                 alert(data )
+                email.current.value=""
+                msg.current.value=""
             }
             else {
                 alert(data)

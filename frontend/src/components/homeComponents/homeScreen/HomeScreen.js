@@ -34,13 +34,13 @@ export default function HomeScreen() {
                         <Navbar />
                     </div>
                 </div>
-                <div className={style.content+ " row col-12 mx-auto"} >
-                    <div  data-aos={"fade-up"}  className="col-12 col-lg-6 my-lg-auto   ">
+                <div className={style.content+ " row col-12 d-flex justify-content-center align-items-center mx-auto"} >
+                    <div  data-aos={"fade-up"}  className="col-12 col-lg-6 my-lg-auto  ">
                         <span className={style.title}>Search Our Mostly Rated And Reviewed Movies</span>
                         <br></br>
                         <span className='fs-5 d-none d-md-flex justify-content-center'>~The world is a stage, the stage is a world of entertainment.</span>
                     </div>
-                    <div  data-aos={"fade-up"}  className="col-12 col-lg-6  p-0 m-lg-auto">
+                    <div  data-aos={"fade-up"}  className="col-12 col-lg-6 p-0 m-lg-auto">
                         <Susbscription />
                     </div>
                 </div>

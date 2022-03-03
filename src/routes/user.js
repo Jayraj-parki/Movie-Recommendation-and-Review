@@ -255,9 +255,21 @@ router.delete("/deleteAccount/:id", async (req, res) => {
     }
 })
 
+ 
 
 
+// update Users profile image
+router.patch("/changeProfileImage", async (req, res) => {
+    const {userId,profile} = req.body?.profileImage
+    try {
 
+        await User.findByIdAndUpdate({_id:userId},{$set:{profile}})
+        res.status(200).json("Profile Update Successfully")
+    }
+    catch (err) {
+        res.status(500).json(err)
+    }
+})
 // // delete User
 // router.delete("/delete/:id", async (req, res) => {
 //     const _id = req.params.id

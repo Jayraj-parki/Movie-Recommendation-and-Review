@@ -19,6 +19,10 @@
             font-family: "Lobster", cursive;
         }
         .collapse{
+            @media screen and (max-width:991px) {
+                background:$text-dark;
+                z-index: 100;
+            }
             ul{
                 li {
                     list-style: none;
